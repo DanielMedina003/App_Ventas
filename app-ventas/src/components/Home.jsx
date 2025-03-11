@@ -1,40 +1,26 @@
-import HambuO from "../assets/HambuO.png"; // Importa la imagen desde assets
+import HambuO from "../assets/HambuO.png"; // Asegúrate de importar correctamente la imagen
 
 const Home = () => {
-
-    return (
-      <section className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gradient-to-b from-black via-red-900 to-black text-white text-center">
-        <div className="w-full h-full flex flex-col items-center justify-center">
-          <h1 className="text-5xl font-bold">Bienvenido a Devil Burger 🍔🔥</h1>
-          <p className="mt-4 text-lg text-gray-300">Las hamburguesas más diabólicamente deliciosas</p>
-          <button className="mt-6 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-lg">
-            Ver Menú
-          </button>
-        </div>
-      </section>
-    );
-  };
-  
-  export default Home;
-  
-
   return (
-    <section className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gradient-to-b from-black via-red-900 to-black text-white text-center p-4">
-      <div className="w-full max-w-5xl h-full flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* Sección de texto (izquierda en desktop, arriba en móvil) */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold">Bienvenido a Devil Burger 🍔🔥</h1>
-          <p className="mt-4 text-lg text-gray-300">
-            Las hamburguesas más diabólicamente deliciosas
+    <section className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gradient-to-b from-black via-[#450000] to-black text-white text-center p-4">
+      <div className="w-full max-w-6xl h-full flex flex-col md:flex-row items-center justify-center gap-6 px-4 md:px-0">
+
+        {/* Sección de texto */}
+        <div className="ml-0 md:ml-[-40px] md:pb-19 w-70 md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+          <h1 className="lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500 drop-shadow-lg animate-pulse mt-8 md:mt-16">
+            Bienvenido a <span className="text-red-600">Devil</span> Burger 🍔🔥
+          </h1>
+          <p className="mt-4              text-lg md:text-xl lg:text-2xl text-gray-300 font-medium">
+            Las hamburguesas más <span className="text-red-400 font-bold">diabólicamente</span> deliciosas
           </p>
         </div>
 
-        {/* Sección de imagen (derecha en desktop, abajo en móvil) */}
-        <div className="w-full md:w-1/2 flex items-center justify-center">
+        {/* Sección de imagen */}
+        <div className="w-3/8 md:w-1/5 pt-10 md:pt-0 flex items-center justify-center">
           <img
-            src={HambuO} 
+            src={HambuO}
             alt="Hamburguesa"
-            className="rounded-lg shadow-lg w-full max-w-xs md:max-w-md"
+            className="rounded-lg shadow-lg w-full max-w-xs md:max-w-md translate-y-[-50px] md:translate-y-0 transition-all duration-300 hover:scale-105"
           />
         </div>
       </div>
@@ -43,4 +29,4 @@ const Home = () => {
 };
 
 export default Home;
-
+                          
