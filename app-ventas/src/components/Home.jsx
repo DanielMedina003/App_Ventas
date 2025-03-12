@@ -1,4 +1,5 @@
 import HambuO from "../assets/HambuO.png"; // Asegúrate de importar correctamente la imagen
+import whatsappIcon from "../assets/whatsapp.webp";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
           <h1 className="lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500 drop-shadow-lg animate-pulse mt-8 md:mt-16">
             Bienvenido a <span className="text-red-600">Devil</span> Burger 🍔🔥
           </h1>
-          <p className="mt-4              text-lg md:text-xl lg:text-2xl text-gray-300 font-medium">
+          <p className="mt-4 text-lg md:text-xl lg:text-2xl text-gray-300 font-medium">
             Las hamburguesas más <span className="text-red-400 font-bold">diabólicamente</span> deliciosas
           </p>
         </div>
@@ -24,9 +25,17 @@ const Home = () => {
           />
         </div>
       </div>
+
+      {/* Botón centrado más arriba */}
+      <div className="absolute bottom-45 flex justify-center w-full">
+      <button className="bg-black  text-rose-500 font-bold py-3 px-6 rounded-full text-lg">
+          Adquiere la tuya
+        </button>
+      </div>
+
+     
     </section>
   );
 };
 
 export default Home;
-                          
